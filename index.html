@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="static/styles/style.css">
         <title>My Webpage</title>
     </head>
     <body>
-        Hello, world!
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">Caglar Kilcioglu</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link active" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="about.html">About</a>
+                        <a class="nav-item nav-link disabled" href="{% url 'all_blogs' %}">Blog</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main role="main">
+            <div class="container">
+                <h1 class="centered">Welcome to My Webpage</h1>
+                <p>Hello, my name is Çağlar, and I am really happy about your visit</p>
+                <img src="static/images/caglar.jpeg" class="img-fluid" alt="portrait">                 
+            </div>
+        </main>
+
+        <footer class="text-muted">
+            <div class="container text-center">
+                <p>© Caglar Kilcioglu 2020</p>
+            </div>
+        </footer>
+
     </body>
 </html>
